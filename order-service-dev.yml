@@ -1,13 +1,12 @@
 spring:
-  datasource: #we will use the data source to get the connection ==> url , username, 
-  #password , driver class will hel[p us to connect with the specicfic databasevendor]
+  datasource:
     url: jdbc:mysql://localhost:3306/devdb?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
-    username: root
-    password: root
+    username: newuser
+    password: password
     driver-class-name: com.mysql.cj.jdbc.Driver
   
 
-  jpa:
+ jpa:
     hibernate:
       ddl-auto: update
     show-sql: true # will print all auto generated sql queries .
